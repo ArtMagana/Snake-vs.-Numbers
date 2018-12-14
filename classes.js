@@ -4,8 +4,7 @@ function Board() {
   this.width = canvas.width
   this.height = canvas.height
   this.img = new Image()
-  //this.img.src = './Universo.jpg'
-  this.img.src = 'https://cdn.pixabay.com/photo/2016/01/19/21/08/starry-1150477_960_720.jpg'
+  this.img.src = './Universo.jpg'
 
   this.img.onload = function () {
     console.log(this)
@@ -34,7 +33,7 @@ function Snake() {
   this.tail = []
 
   this.movement = function () {
-    this.x += (this.xspeed * this.width) //
+    this.x += (this.xspeed * this.width/3) //
     if (this.x + this.width > canvas.width) {
       this.xspeed = -1
     } else if (this.x < 0) {
