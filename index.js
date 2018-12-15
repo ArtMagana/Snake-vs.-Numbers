@@ -22,6 +22,7 @@ window.onload = function () {
     takeNumeric()
     takeOperator()
     takeNumeric2()
+    takeNonResult()
     takeResult()
   }
 function startGame() {

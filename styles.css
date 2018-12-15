@@ -1,6 +1,6 @@
 canvas {
   border: 2px solid red;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .score {
@@ -8,20 +8,18 @@ canvas {
 }
 
 #title {
-  transform-style: preserve-3d;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 70px;
-  line-height: 70px;
 }
 
 #center {
-  transform-style: preserve-3d;
   position: absolute;
-  top: 0%;
   left: 50%;
   transform: translateY(-50%);
   transform: translateX(-50%);
+}
+
+#operator, #score{
+  margin-left: 100px;
+  padding-top: 100px;
 }
